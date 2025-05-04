@@ -1,15 +1,17 @@
-// Funktion, um das Werbebanner anzuzeigen
-function showAdBanner() {
-  const adBanner = document.getElementById("ad-banner");
-  adBanner.classList.remove("hide");  // Banner anzeigen
+const promoBanner = document.getElementById('promoBanner');
+const gportalBanner = document.getElementById('gportalBanner');
 
-  // Nach 5 Sekunden das Banner wieder ausblenden
-  setTimeout(function() {
-    adBanner.classList.add("hide");
-  }, 5000);  // Banner bleibt 5 Sekunden sichtbar
+function shakeBanner(banner) {
+  banner.classList.add('shake');
+  setTimeout(() => {
+    banner.classList.remove('shake');
+  }, 400); // Remove the shake class after the animation completes
 }
 
-// Alle 15 Sekunden das Werbebanner anzeigen
-setInterval(showAdBanner, 15000); // Alle 15 Sekunden
+function showBanners() {
+  shakeBanner(promoBanner);  // Shake promo banner
+  shakeBanner(gportalBanner);  // Shake G-Portal banner
+}
 
-  
+// Apply the shake effect every 5 seconds
+setInterval(showBanners, 5000);

@@ -77,13 +77,6 @@ a:hover {
   background-color: #cc3700;
 }
 
-.gallery-img {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 10px;
-  border: 3px solid #ff4500;
-}
-
 .promo-banner {
   position: fixed;
   top: 20px;
@@ -115,11 +108,30 @@ a:hover {
   100% { transform: translateX(0); }
 }
 
+.gportal-banner {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
 
+.gportal-banner img {
+  width: 120px;
+  height: auto;
+}
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
 
-
-
-
-  
-  
-  
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}
