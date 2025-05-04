@@ -1,0 +1,160 @@
+/* Allgemeines Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c; /* Dunkles Hintergrund */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Header Design */
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+header img.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #e74c3c; /* Rote Farbe für den Header */
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e67e22; /* Orange für Links */
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #e74c3c; /* Rote Farbe für Hover */
+}
+
+/* Content Boxes - Jedes Thema in einem Kasten */
+.content-box {
+  background-color: #333;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 3px solid #e74c3c; /* Rote Kanten für Kasten */
+}
+
+/* Discord Link - Einbettung */
+.discord-box {
+  background-color: #2f3136; /* Dunklerer Hintergrund für Discord */
+  border: 2px solid #7289da; /* Discord-Farbe für Rahmen */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.discord-link {
+  display: inline-block;
+  background-color: #7289da; /* Discord Blau */
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.discord-link:hover {
+  background-color: #5a6e8e; /* Dunklerer Blau-Ton */
+}
+
+/* Werbung Banner - Animation */
+.ad-banner {
+  background-color: #e74c3c; /* Rote Farbe für das Banner */
+  color: black;
+  padding: 20px;
+  position: fixed;
+  top: -100px; /* Startposition außerhalb des Bildschirms */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: 3px solid #e67e22; /* Orange Rand */
+  z-index: 1000;
+  animation: shakeAndSlideIn 2s ease-in-out forwards;
+}
+
+/* Banner verstecken, wenn es nicht angezeigt werden soll */
+.hide {
+  top: -100px; /* Verschwindet wieder nach oben */
+  opacity: 0; /* Unsichtbar */
+  transition: top 1s ease-out, opacity 1s ease-out;
+}
+
+/* Animation: Werbung kommt herein und wackelt */
+@keyframes shakeAndSlideIn {
+  0% {
+    top: -100px;
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+/* Main Content */
+section {
+  padding: 20px;
+  background-color: #333;
+  margin: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2 {
+  color: #e74c3c; /* Rote Farbe für Titel */
+}
+
+h2, p {
+  color: #ecf0f1; /* Helle Textfarbe */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+  
+  
+  
