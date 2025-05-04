@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUX-MC - Minecraft Server</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>LUX-MC</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <img src="https://ibb.co/5gT1XGBT" alt="LUX-MC Logo" class="logo">
-        <h1>LUX-MC</h1>
-        <p>Wir sind ein Team von 4 Leuten, die seit 2024 Minecraft-Server mit verschiedenen Themen betreiben. Eine nette Community wartet auf dich!</p>
-    </header>
+  <div id="promoBanner" class="promo-banner">🔥 Der neue LUX-MC Economy Server startet am 11. Juli 2025! 🔥</div>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Über uns</a></li>
-            <li><a href="#">Minecraft Server</a></li>
-            <li><a href="gallery.html">Galerie</a></li>
-        </ul>
-    </nav>
+  <header>
+    <img src="https://i.ibb.co/5gT1XGBT/logo.png" alt="LuxMC Logo" class="logo" />
+    <h1>LUX-MC</h1>
+    <p>Ein Minecraft Server mit Leidenschaft seit 2024.</p>
+  </header>
 
-    <!-- Werbung Banner -->
-    <div id="ad-banner" class="ad-banner hide">
-        Werbung für den Lux-MC Economy Server - Starte am 11. Juli 2025!
+  <main class="container">
+    <div class="box">
+      <h2>Über uns</h2>
+      <p>Über uns
+        Willkommen bei LUX-MC – deiner kreativen Minecraft-Welt! Seit 2024 entwickeln wir mit einem kleinen, engagierten Team einzigartige Serverkonzepte mit viel Herzblut und Ideenreichtum. Ob actiongeladene PvP-Schlachten oder wirtschaftlich durchdachte Survival-Welten – bei uns steht der Spielspaß an erster Stelle. Unsere Community ist freundlich, hilfsbereit und immer offen für neue Spieler.
+        Tauch ein in unsere Welt – gemeinsam bauen wir das nächste große Abenteuer!</p>
     </div>
 
-    <!-- Über Uns -->
-    <section>
-        <h2>Über uns</h2>
-        <p>Wir sind ein kreatives Team, das Minecraft-Server betreibt. Unsere Community ist freundlich, und wir sind immer auf der Suche nach neuen Mitgliedern, die Spaß am Spiel haben.</p>
-    </section>
+    <div class="box discord-box">
+      <h2>Unser Discord</h2>
+      <div class="discord-content">
+        <img src="https://i.ibb.co/5gT1XGBT/logo.png" alt="Discord Vorschau" class="discord-img" />
+        <a href="https://discord.gg/vwm5Mv93Ye" target="_blank" class="discord-btn">🌐 Discord beitreten</a>
+      </div>
+    </div>
 
-    <!-- Discord Link Box -->
-    <section class="discord-box">
-        <h2>Discord Community</h2>
-        <p>Tritt unserem Discord bei und chatte mit uns!</p>
-        <a href="https://discord.gg/vwm5Mv93Ye" class="discord-link" target="_blank">
-            <img src="https://ibb.co/5gT1XGBT" alt="Discord Logo" width="150">
-            Trete jetzt bei!
-        </a>
-    </section>
+    <div class="box">
+      <h2>Unsere Minecraft Server</h2>
+      <ul>
+        <li>🟥 LuxAttack 1 – <span class="offline">Offline</span></li>
+        <li>🟥 LuxAttack 2 – <span class="offline">Offline</span></li>
+        <li>🟧 Lux-MC Economy – Start am 11. Juli 2025</li>
+      </ul>
+      <p><em>IP-Adresse wird bald veröffentlicht</em></p>
+    </div>
 
-    <!-- Minecraft Server Info -->
-    <section class="content-box">
-        <h2>Unsere Minecraft Server</h2>
-        <p>Derzeit sind folgende Server aktiv:</p>
-        <ul>
-            <li>LuxAttack 1 - Offline</li>
-            <li>LuxAttack 2 - Offline</li>
-            <li>Lux-MC Economy - Startet am 11. Juli 2025</li>
-        </ul>
-    </section>
+    <div class="box">
+      <h2>📸 Galerie</h2>
+      <p><a href="galerie.html" class="galerie-link">Zur Galerie-Seite →</a></p>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 LUX-MC - Alle Rechte vorbehalten</p>
-    </footer>
+    <div class="box">
+      <h2>⬇️ Alte Server-Versionen</h2>
+      <p>Bald kannst du hier frühere Versionen unserer Server herunterladen.</p>
+    </div>
+  </main>
 
-    <script src="script.js"></script>
+  <script>
+    const banner = document.getElementById('promoBanner');
+    function showBanner() {
+      banner.classList.add('visible', 'shake');
+      setTimeout(() => {
+        banner.classList.remove('visible', 'shake');
+      }, 5000);
+    }
+    setInterval(showBanner, 15000);
+    showBanner();
+  </script>
 </body>
 </html>
-
-
-
 
